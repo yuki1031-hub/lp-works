@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LISELA（リセラ）は女性専用の美肌脱毛サロン。全身脱毛・VIO脱毛・顔脱毛など豊富なプランをご用意。初回カウンセリング無料。">
+  <title>LISELA（リセラ）| 女性専用美肌脱毛サロン</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <span class="logo-mark">✦</span>
+        <span class="logo-text">LISELA</span>
+        <span class="logo-sub">リセラ</span>
+      </a>
+
+      <nav class="header__nav" id="headerNav">
+        <ul class="nav__list">
+          <li><a href="#plan">料金プラン</a></li>
+          <li><a href="#feature">リセラの特徴</a></li>
+          <li><a href="#flow">施術の流れ</a></li>
+          <li><a href="#faq">よくある質問</a></li>
+          <li><a href="#salon">サロン案内</a></li>
+        </ul>
+      </nav>
+
+      <a href="#reserve" class="btn btn--gold header__cta">無料カウンセリング予約</a>
+
+      <button class="hamburger" id="hamburger" aria-label="メニュー">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#plan" class="mobile-nav__link">料金プラン</a></li>
+      <li><a href="#feature" class="mobile-nav__link">リセラの特徴</a></li>
+      <li><a href="#flow" class="mobile-nav__link">施術の流れ</a></li>
+      <li><a href="#faq" class="mobile-nav__link">よくある質問</a></li>
+      <li><a href="#salon" class="mobile-nav__link">サロン案内</a></li>
+    </ul>
+    <a href="#reserve" class="btn btn--gold mobile-nav__cta">無料カウンセリング予約</a>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero__slider" id="heroSlider">
+      <div class="hero__slide hero__slide--1 active">
+        <div class="slide-bg"></div>
+      </div>
+      <div class="hero__slide hero__slide--2">
+        <div class="slide-bg"></div>
+      </div>
+      <div class="hero__slide hero__slide--3">
+        <div class="slide-bg"></div>
+      </div>
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">Women's Smooth Skin Salon</p>
+      <h1 class="hero__title">
+        美しく、<br>自由に。
+      </h1>
+      <p class="hero__sub">肌のなめらかさが、自信に変わる。<br>あなただけの美しさを、リセラで。</p>
+      <a href="#reserve" class="btn btn--gold btn--lg hero__cta">無料カウンセリング予約</a>
+    </div>
+
+    <div class="hero__dots">
+      <button class="dot active" data-index="0"></button>
+      <button class="dot" data-index="1"></button>
+      <button class="dot" data-index="2"></button>
+    </div>
+  </section>
+
+
+  <!-- ========== NOTICE BAR ========== -->
+  <div class="notice-bar">
+    <div class="notice-bar__inner">
+      <span class="notice-bar__icon">✦</span>
+      <p>春の新生活応援キャンペーン実施中！全身脱毛が最大40%OFF &nbsp;|&nbsp; 初回カウンセリング完全無料 &nbsp;|&nbsp; 分割払い金利0円</p>
+    </div>
+  </div>
+
+
+  <!-- ========== CAMPAIGN ========== -->
+  <section class="campaign section" id="campaign">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-head__en">Campaign</p>
+        <h2 class="section-head__ja">お得なキャンペーン</h2>
+      </div>
+
+      <div class="campaign__slider" id="campaignSlider">
+        <div class="campaign__track" id="campaignTrack">
+          <div class="campaign__card">
+            <div class="campaign__card-badge">期間限定</div>
+            <div class="campaign__card-icon">🌸</div>
+            <h3>春の全身脱毛キャンペーン</h3>
+            <p>全身脱毛6回コースが<strong>40%OFF</strong><br>3月〜5月限定のスペシャルプライス</p>
+            <a href="#reserve" class="btn btn--outline btn--sm">詳しく見る</a>
+          </div>
+          <div class="campaign__card">
+            <div class="campaign__card-badge">学割</div>
+            <div class="campaign__card-icon">🎓</div>
+            <h3>学生限定プライス</h3>
+            <p>学生証提示で全プランが<strong>20%OFF</strong><br>在学中はずっとお得に通える</p>
+            <a href="#reserve" class="btn btn--outline btn--sm">詳しく見る</a>
+          </div>
+          <div class="campaign__card">
+            <div class="campaign__card-badge">ペア割</div>
+            <div class="campaign__card-icon">👯</div>
+            <h3>お友達紹介キャンペーン</h3>
+            <p>お友達と一緒でおふたりとも<strong>10,000円OFF</strong><br>大切な人と一緒に始めよう</p>
+            <a href="#reserve" class="btn btn--outline btn--sm">詳しく見る</a>
+          </div>
+          <div class="campaign__card">
+            <div class="campaign__card-badge">乗換</div>
+            <div class="campaign__card-icon">✨</div>
+            <h3>乗り換え歓迎割引</h3>
+            <p>他サロンからの乗り換えで<strong>15%OFF</strong><br>途中からでも安心してお乗り換えを</p>
+            <a href="#reserve" class="btn btn--outline btn--sm">詳しく見る</a>
+          </div>
+        </div>
+      </div>
+      <div class="campaign__arrows">
+        <button class="arrow-btn" id="campaignPrev">&#8592;</button>
+        <button class="arrow-btn" id="campaignNext">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== SPECIAL PLAN CARDS ========== -->
+  <section class="special section section--pink" id="special">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-head__en">Special Plan</p>
+        <h2 class="section-head__ja">スペシャルプラン</h2>
+      </div>
+
+      <div class="special__grid">
+        <div class="special__item">
+          <div class="special__icon">🌙</div>
+          <h3>平日デイタイム割</h3>
+          <p>平日10:00〜16:00のご予約で<br>全プラン<strong>10%OFF</strong></p>
+        </div>
+        <div class="special__item">
+          <div class="special__icon">💎</div>
+          <h3>回数追加オプション</h3>
+          <p>追加回数を単品でいつでも<br>お得に追加できる</p>
+        </div>
+        <div class="special__item">
+          <div class="special__icon">💳</div>
+          <h3>分割払い金利0円</h3>
+          <p>月々の負担を抑えて<br>無理なく続けられる</p>
+        </div>
+        <div class="special__item">
+          <div class="special__icon">🎁</div>
+          <h3>初回体験プラン</h3>
+          <p>まずは試したい方へ<br>体験コース<strong>980円〜</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== PLAN / PRICING ========== -->
+  <section class="plan section" id="plan">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-head__en">Price Plan</p>
+        <h2 class="section-head__ja">料金プラン</h2>
+        <p class="section-head__note">追加費用一切なし。表示価格のみで完了します。</p>
+      </div>
+
+      <div class="plan__tabs">
+        <button class="plan__tab active" data-tab="body">全身脱毛</button>
+        <button class="plan__tab" data-tab="vio">VIO脱毛</button>
+        <button class="plan__tab" data-tab="face">顔脱毛</button>
+        <button class="plan__tab" data-tab="parts">部位別</button>
+      </div>
+
+      <div class="plan__content" id="planContent">
+        <!-- Body -->
+        <div class="plan__pane active" data-pane="body">
+          <div class="plan__cards">
+            <div class="plan__card">
+              <div class="plan__card-label">人気No.1</div>
+              <h3 class="plan__card-name">全身脱毛<br><span>スタンダード</span></h3>
+              <p class="plan__card-area">顔・VIO除く 全身</p>
+              <div class="plan__card-price">
+                <span class="price-num">¥69,800</span>
+                <span class="price-round">6回コース</span>
+              </div>
+              <p class="plan__card-monthly">月々 ¥2,910〜</p>
+              <ul class="plan__card-list">
+                <li>全22部位対応</li>
+                <li>追加料金なし</li>
+                <li>途中部位変更OK</li>
+              </ul>
+              <a href="#reserve" class="btn btn--gold btn--full">予約する</a>
+            </div>
+
+            <div class="plan__card plan__card--recommend">
+              <div class="plan__card-label">おすすめ</div>
+              <h3 class="plan__card-name">全身+VIO+顔<br><span>コンプリート</span></h3>
+              <p class="plan__card-area">全身 + VIO + 顔</p>
+              <div class="plan__card-price">
+                <span class="price-num">¥98,000</span>
+                <span class="price-round">6回コース</span>
+              </div>
+              <p class="plan__card-monthly">月々 ¥4,083〜</p>
+              <ul class="plan__card-list">
+                <li>全身すべて込み</li>
+                <li>VIO・顔も含む</li>
+                <li>最もお得なプラン</li>
+              </ul>
+              <a href="#reserve" class="btn btn--gold btn--full">予約する</a>
+            </div>
+
+            <div class="plan__card">
+              <div class="plan__card-label">じっくり派</div>
+              <h3 class="plan__card-name">全身脱毛<br><span>プレミアム</span></h3>
+              <p class="plan__card-area">顔・VIO除く 全身</p>
+              <div class="plan__card-price">
+                <span class="price-num">¥109,800</span>
+                <span class="price-round">12回コース</span>
+              </div>
+              <p class="plan__card-monthly">月々 ¥4,575〜</p>
+              <ul class="plan__card-list">
+                <li>じっくり12回照射</li>
+                <li>効果を実感しやすい</li>
+                <li>1回あたり最安値</li>
+              </ul>
+              <a href="#reserve" class="btn btn--gold btn--full">予約する</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- VIO -->
+        <div class="plan__pane" data-pane="vio">
+          <div class="plan__cards">
+            <div class="plan__card">
+              <h3 class="plan__card-name">VIO脱毛<br><span>ライト</span></h3>
+              <p class="plan__card-area">Vライン・Iライン・Oライン</p>
+              <div class="plan__card-price">
+                <span class="price-num">¥29,800</span>
+                <span class="price-round">6回コース</span>
+              </div>
+              <p class="plan__card-monthly">月々 ¥1,241〜</p>
+              <ul class="plan__card-list">
+                <li>3部位セット</li>
+                <li>形を選べる</li>
+                <li>追加料金なし</li>
+              </ul>
+              <a href="#reserve" class="btn btn--gold btn--full">予約する</a>
+            </div>
+            <div class="plan__card plan__card--recommend">
+              <div class="plan__card-label">おすすめ</div>
+              <h3 class="plan__card-name">VIO脱毛<br><span>スタンダード</span></h3>
+              <p class="plan__card-area">Vライン・Iライン・Oライン</p>
+              <div class="plan__card-price">
+                <span class="price-num">¥42,000</span>
+                <span class="price-round">9回コース</span>
+              </div>
+              <p class="plan__card-monthly">月々 ¥1,750〜</p>
+              <ul class="plan__card-list">
+                <li>3部位セット</li>
+                <li>しっかり9回</li>
+                <li>パーフェクト脱毛</li>
+              </ul>
+              <a href="#reserve" class="btn btn--gold btn--full">予約する</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Face -->
+        <div class="plan__pane" data-pane="face">
+          <div class="plan__cards">
+            <div class="plan__card">
+              <h3 class="plan__card-name">顔脱毛<br><span>ライト</span></h3>
+              <p class="plan__card-area">産毛・うぶ毛中心</p>
+              <div class="plan__card-price">
+                <span class="price-num">¥19,800</span>
+                <span class="price-round">6回コース</span>
+              </div>
+              <p class="plan__card-monthly">月々 ¥825〜</p>
+              <ul class="plan__card-list">
+                <li>産毛ケア特化</li>
+                <li>美肌効果も</li>
+              </ul>
+              <a href="#reserve" class="btn btn--gold btn--full">予約する</a>
+            </div>
+            <div class="plan__card plan__card--recommend">
+              <div class="plan__card-label">おすすめ</div>
+              <h3 class="plan__card-name">顔脱毛<br><span>フルフェイス</span></h3>
+              <p class="plan__card-area">おでこ〜フェイスライン全部</p>
+              <div class="plan__card-price">
+                <span class="price-num">¥32,000</span>
+                <span class="price-round">6回コース</span>
+              </div>
+              <p class="plan__card-monthly">月々 ¥1,333〜</p>
+              <ul class="plan__card-list">
+                <li>フルフェイス全域</li>
+                <li>眉まわりも対応</li>
+                <li>化粧ノリUP</li>
+              </ul>
+              <a href="#reserve" class="btn btn--gold btn--full">予約する</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Parts -->
+        <div class="plan__pane" data-pane="parts">
+          <div class="parts__table-wrap">
+            <table class="parts__table">
+              <thead>
+                <tr>
+                  <th>部位</th>
+                  <th>3回</th>
+                  <th>6回</th>
+                  <th>9回</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>ワキ</td><td>¥5,800</td><td>¥9,800</td><td>¥13,800</td></tr>
+                <tr><td>ひざ下</td><td>¥8,800</td><td>¥14,800</td><td>¥19,800</td></tr>
+                <tr><td>ひざ上</td><td>¥8,800</td><td>¥14,800</td><td>¥19,800</td></tr>
+                <tr><td>二の腕</td><td>¥7,800</td><td>¥12,800</td><td>¥17,800</td></tr>
+                <tr><td>うなじ</td><td>¥5,800</td><td>¥9,800</td><td>¥13,800</td></tr>
+                <tr><td>背中</td><td>¥12,800</td><td>¥22,800</td><td>¥29,800</td></tr>
+                <tr><td>お腹</td><td>¥10,800</td><td>¥18,800</td><td>¥24,800</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="plan__note">
+        <p>※ 表示価格はすべて税込です。分割払いは24回払いの場合の月額です。</p>
+        <p>※ 都度払いも受け付けています。詳しくはカウンセリングにてご確認ください。</p>
+      </div>
+
+      <div class="plan__cta">
+        <a href="#reserve" class="btn btn--gold btn--lg">無料カウンセリング予約</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== FEATURE ========== -->
+  <section class="feature section section--cream" id="feature">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-head__en">Why LISELA</p>
+        <h2 class="section-head__ja">リセラが選ばれる理由</h2>
+      </div>
+
+      <div class="feature__grid">
+        <div class="feature__item">
+          <div class="feature__num">01</div>
+          <div class="feature__icon">🔬</div>
+          <h3>最新の脱毛機器で<br>しっかり効果</h3>
+          <p>最新鋭の光脱毛・レーザー機器を導入。肌タイプに合わせて3種の機器を使い分け、産毛から剛毛まで幅広い毛質に対応します。</p>
+        </div>
+
+        <div class="feature__item">
+          <div class="feature__num">02</div>
+          <div class="feature__icon">🌿</div>
+          <h3>痛みに配慮した<br>やさしい施術</h3>
+          <p>冷却システム搭載で施術中の痛みを最大限に軽減。デリケートな部位も含め、全身を安心・快適に施術できます。</p>
+        </div>
+
+        <div class="feature__item">
+          <div class="feature__num">03</div>
+          <div class="feature__icon">📅</div>
+          <h3>予約が取りやすい<br>充実した店舗数</h3>
+          <p>全国20店舗展開で、都市部を中心に通いやすい場所に。アプリから24時間予約可能で、ライフスタイルに合わせて無理なく通えます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== VOICE / RESULTS ========== -->
+  <section class="voice section" id="voice">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-head__en">Customer Voice</p>
+        <h2 class="section-head__ja">お客様の声</h2>
+      </div>
+
+      <div class="voice__slider" id="voiceSlider">
+        <div class="voice__track" id="voiceTrack">
+          <div class="voice__card">
+            <div class="voice__stars">★★★★★</div>
+            <p class="voice__text">「3回目から明らかに毛が薄くなって感動しました！スタッフさんがとても親切で、毎回通うのが楽しみになっています。」</p>
+            <p class="voice__name">20代 / 会社員</p>
+          </div>
+          <div class="voice__card">
+            <div class="voice__stars">★★★★★</div>
+            <p class="voice__text">「他サロンで効果が出なくて悩んでいたのですが、リセラに乗り換えてから5回目で全身ツルツルになりました！料金も良心的です。」</p>
+            <p class="voice__name">30代 / 主婦</p>
+          </div>
+          <div class="voice__card">
+            <div class="voice__stars">★★★★☆</div>
+            <p class="voice__text">「VIO脱毛が初めてで不安でしたが、プライバシーに配慮された個室でリラックスして受けられました。痛みも思ったより少なかったです。」</p>
+            <p class="voice__name">20代 / 学生</p>
+          </div>
+          <div class="voice__card">
+            <div class="voice__stars">★★★★★</div>
+            <p class="voice__text">「分割払いで月々の負担が少なくて助かりました。予約もアプリで簡単にできるし、スタッフの対応も丁寧で大満足です！」</p>
+            <p class="voice__name">30代 / 看護師</p>
+          </div>
+        </div>
+      </div>
+      <div class="voice__arrows">
+        <button class="arrow-btn" id="voicePrev">&#8592;</button>
+        <button class="arrow-btn" id="voiceNext">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section section--dark" id="about">
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__text">
+          <p class="section-head__en" style="color:#c9a96e;">About LISELA</p>
+          <h2 class="about__title">「脱毛」を<br>もっと身近に、<br>もっと快適に。</h2>
+          <p class="about__body">LISELAは、女性のためだけの美肌脱毛サロン。<br>「通いやすさ」「効果の高さ」「安心できる空間」の3つにこだわり、2015年の創業以来、累計10万件以上の施術を提供してきました。</p>
+          <p class="about__body">一人ひとりの肌質・毛質・ライフスタイルに合わせたオーダーメイドのプランで、あなたの理想の肌を一緒に目指します。</p>
+          <a href="#reserve" class="btn btn--gold btn--lg">無料カウンセリングを予約</a>
+        </div>
+        <div class="about__stats">
+          <div class="stat">
+            <span class="stat__num">100,000<span class="stat__unit">件+</span></span>
+            <span class="stat__label">累計施術実績</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">10<span class="stat__unit">年+</span></span>
+            <span class="stat__label">サービス提供年数</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">20<span class="stat__unit">店舗</span></span>
+            <span class="stat__label">全国展開中</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">98<span class="stat__unit">%</span></span>
+            <span class="stat__label">顧客満足度</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== FLOW ========== -->
+  <section class="flow section" id="flow">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-head__en">How to Start</p>
+        <h2 class="section-head__ja">はじめての方へ<br>施術の流れ</h2>
+      </div>
+
+      <div class="flow__steps">
+        <div class="flow__step">
+          <div class="flow__step-num">STEP 01</div>
+          <div class="flow__step-icon">📱</div>
+          <h3>WEB予約</h3>
+          <p>公式サイトまたはアプリから無料カウンセリングを予約。24時間受付中で、最短翌日から予約可能です。</p>
+        </div>
+        <div class="flow__arrow">→</div>
+        <div class="flow__step">
+          <div class="flow__step-num">STEP 02</div>
+          <div class="flow__step-icon">💬</div>
+          <h3>無料カウンセリング</h3>
+          <p>肌の状態・希望部位・生活スタイルをヒアリング。担当スタッフが最適なプランをご提案します。</p>
+        </div>
+        <div class="flow__arrow">→</div>
+        <div class="flow__step">
+          <div class="flow__step-num">STEP 03</div>
+          <div class="flow__step-icon">📋</div>
+          <h3>プランご契約</h3>
+          <p>納得いただけたらご契約。支払方法・スケジュールもこの場で確定。当日施術も可能です。</p>
+        </div>
+        <div class="flow__arrow">→</div>
+        <div class="flow__step">
+          <div class="flow__step-num">STEP 04</div>
+          <div class="flow__step-icon">✨</div>
+          <h3>施術スタート</h3>
+          <p>専任スタッフが個室で丁寧に施術。お肌の状態を確認しながら毎回ベストな設定で照射します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== FAQ ========== -->
+  <section class="faq section section--cream" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-head__en">FAQ</p>
+        <h2 class="section-head__ja">よくある質問</h2>
+      </div>
+
+      <div class="faq__list">
+        <div class="faq__item">
+          <button class="faq__q">
+            <span class="faq__q-icon">Q</span>
+            <span>脱毛にはどのくらいの期間がかかりますか？</span>
+            <span class="faq__toggle">+</span>
+          </button>
+          <div class="faq__a">
+            <p>個人差はありますが、6回コースで平均8〜12ヶ月かかります。1回の施術で全毛を処理できるわけではなく、毛周期に合わせて定期的に照射することで効果を高めます。パーフェクトな仕上がりには9〜12回が目安です。</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q">
+            <span class="faq__q-icon">Q</span>
+            <span>生理中でも施術を受けられますか？</span>
+            <span class="faq__toggle">+</span>
+          </button>
+          <div class="faq__a">
+            <p>VIO脱毛以外の部位は生理中でも施術可能です。VIOについては衛生上の理由から、生理中の施術はお断りしています。生理周期に合わせて予約日を調整することをお勧めします。</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q">
+            <span class="faq__q-icon">Q</span>
+            <span>妊娠中・授乳中でも施術できますか？</span>
+            <span class="faq__toggle">+</span>
+          </button>
+          <div class="faq__a">
+            <p>妊娠中の方の施術はお断りしています。授乳中の方は施術可能ですが、ホルモンバランスの変化により効果に個人差が出やすいため、カウンセリング時にご相談ください。</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q">
+            <span class="faq__q-icon">Q</span>
+            <span>痛みはありますか？</span>
+            <span class="faq__toggle">+</span>
+          </button>
+          <div class="faq__a">
+            <p>冷却機能付きの最新機器を使用しているため、痛みは最小限です。「輪ゴムで軽く弾く程度」と表現する方が多いです。痛みに敏感な方には出力調整も可能ですので、担当スタッフにご相談ください。</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q">
+            <span class="faq__q-icon">Q</span>
+            <span>途中でコースを変更・追加できますか？</span>
+            <span class="faq__toggle">+</span>
+          </button>
+          <div class="faq__a">
+            <p>はい、可能です。施術の進捗や効果を見ながら、回数の追加や部位の変更が柔軟にできます。コース途中の乗り換えや差額でのアップグレードもお気軽にご相談ください。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== SALON / LOCATION ========== -->
+  <section class="salon section" id="salon">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-head__en">Salon</p>
+        <h2 class="section-head__ja">サロン案内</h2>
+      </div>
+
+      <div class="salon__grid">
+        <div class="salon__area">
+          <h3 class="salon__area-name">北海道・東北</h3>
+          <ul>
+            <li>札幌大通店</li>
+            <li>仙台店</li>
+          </ul>
+        </div>
+        <div class="salon__area">
+          <h3 class="salon__area-name">関東</h3>
+          <ul>
+            <li>新宿店</li>
+            <li>渋谷店</li>
+            <li>池袋店</li>
+            <li>銀座店</li>
+            <li>横浜店</li>
+          </ul>
+        </div>
+        <div class="salon__area">
+          <h3 class="salon__area-name">中部・関西</h3>
+          <ul>
+            <li>名古屋栄店</li>
+            <li>大阪梅田店</li>
+            <li>大阪難波店</li>
+            <li>神戸三宮店</li>
+            <li>京都四条店</li>
+          </ul>
+        </div>
+        <div class="salon__area">
+          <h3 class="salon__area-name">中国・九州</h3>
+          <ul>
+            <li>広島店</li>
+            <li>福岡天神店</li>
+            <li>博多店</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="salon__info">
+        <div class="salon__info-item">
+          <span class="salon__info-label">営業時間</span>
+          <span>10:00〜21:00（最終受付 20:00）</span>
+        </div>
+        <div class="salon__info-item">
+          <span class="salon__info-label">定休日</span>
+          <span>不定休（各店舗による）</span>
+        </div>
+        <div class="salon__info-item">
+          <span class="salon__info-label">予約</span>
+          <span>WEB・アプリ・電話にて受付中</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== RESERVE CTA ========== -->
+  <section class="reserve section section--gold" id="reserve">
+    <div class="container">
+      <div class="reserve__inner">
+        <p class="reserve__en">Free Counseling</p>
+        <h2 class="reserve__title">まずは無料カウンセリングへ</h2>
+        <p class="reserve__sub">料金・効果・施術への不安、なんでもご相談ください。<br>スタッフが丁寧にご説明いたします。</p>
+
+        <div class="reserve__btns">
+          <a href="tel:0120-000-0000" class="btn btn--white btn--lg reserve__tel">
+            <span class="reserve__tel-icon">📞</span>
+            <span>
+              <small>お電話でのご予約</small><br>
+              0120-000-0000
+            </span>
+          </a>
+          <a href="#" class="btn btn--dark btn--lg reserve__web">
+            <span>WEBで予約する</span>
+            <span class="reserve__web-arrow">→</span>
+          </a>
+        </div>
+
+        <p class="reserve__note">受付時間：10:00〜21:00（年中無休）</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="footer__logo">
+            <span class="logo-mark">✦</span>
+            <span class="logo-text">LISELA</span>
+            <span class="logo-sub">リセラ</span>
+          </a>
+          <p class="footer__tagline">女性専用美肌脱毛サロン</p>
+          <div class="footer__sns">
+            <a href="#" class="sns-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" class="sns-link" aria-label="Twitter">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="sns-link" aria-label="YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="#" class="sns-link" aria-label="LINE">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__nav">
+          <div class="footer__nav-col">
+            <h4>料金・プラン</h4>
+            <ul>
+              <li><a href="#plan">全身脱毛プラン</a></li>
+              <li><a href="#plan">VIO脱毛プラン</a></li>
+              <li><a href="#plan">顔脱毛プラン</a></li>
+              <li><a href="#plan">部位別料金</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <h4>サービス</h4>
+            <ul>
+              <li><a href="#feature">リセラの特徴</a></li>
+              <li><a href="#flow">施術の流れ</a></li>
+              <li><a href="#campaign">キャンペーン</a></li>
+              <li><a href="#faq">よくある質問</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <h4>サロン</h4>
+            <ul>
+              <li><a href="#salon">店舗一覧</a></li>
+              <li><a href="#reserve">カウンセリング予約</a></li>
+              <li><a href="#">採用情報</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <h4>会社情報</h4>
+            <ul>
+              <li><a href="#">会社概要</a></li>
+              <li><a href="#">プライバシーポリシー</a></li>
+              <li><a href="#">特定商取引法</a></li>
+              <li><a href="#">お問い合わせ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 LISELA All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fixed CTA -->
+  <div class="fixed-cta" id="fixedCta">
+    <a href="#reserve" class="btn btn--gold">無料カウンセリング予約</a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
